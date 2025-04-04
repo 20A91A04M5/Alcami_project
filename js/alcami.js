@@ -1,12 +1,9 @@
 
-
-// Toggle Hamburger Menu on small/medium screens
 function toggleMenu() {
   const navLinks = document.querySelector(".nav-links");
   navLinks.classList.toggle("active");
 }
 
-// Toggle Search Box if needed
 function toggleSearch() {
   const searchBox = document.querySelector(".search-box");
   searchBox.style.display = (searchBox.style.display === "block") ? "none" : "block";
@@ -36,7 +33,6 @@ nextBtn.addEventListener('click', () => {
 });
 
 
-// Example: Button Click Alert
 document.querySelector(".cta-button").addEventListener("click", function () {
   alert("Thank you for your interest!");
 });
@@ -53,7 +49,7 @@ document.querySelector(".cta-button").addEventListener("click", function () {
 
 function playVideo() {
   alert("Playing Founder Video...");
-  // Replace with real video modal or redirect to video page.
+  
 }
 
 
@@ -67,7 +63,7 @@ document.addEventListener("DOMContentLoaded", function() {
       const toggle = item.querySelector(".faq-toggle");
 
       question.addEventListener("click", () => {
-          // Close other open items
+          
           faqItems.forEach(otherItem => {
               if (otherItem !== item) {
                   otherItem.querySelector(".faq-answer").style.display = "none";
@@ -75,7 +71,7 @@ document.addEventListener("DOMContentLoaded", function() {
               }
           });
 
-          // Toggle current FAQ item
+          
           if (answer.style.display === "block") {
               answer.style.display = "none";
               toggle.textContent = "+";
@@ -101,7 +97,7 @@ document.addEventListener("DOMContentLoaded", function () {
       }
 
       alert(`Thank you for subscribing! A confirmation has been sent to ${email}`);
-      emailInput.value = ""; // Clear input field
+      emailInput.value = ""; 
   });
 });
 
@@ -123,7 +119,7 @@ document.getElementById('subscribe-btn').addEventListener('click', function () {
 
 
 document.addEventListener('DOMContentLoaded', function() {
-  // Testimonial data
+ 
   const testimonials = [
       {
           text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare.",
@@ -187,30 +183,30 @@ document.addEventListener('DOMContentLoaded', function() {
       }
   ];
 
-  // Elements
+ 
   const slide = document.getElementById('slide');
   const dots = document.getElementById('dots');
   const prevBtn = document.getElementById('prevBtn');
   const nextBtn = document.getElementById('nextBtn');
 
-  // Configuration
-  let cardsPerSlide = 4; // Default for large screens: 4 cards
+  
+  let cardsPerSlide = 4; 
   if (window.innerWidth <= 1200 && window.innerWidth > 992) {
-      cardsPerSlide = 3; // Medium screens: 3 cards
+      cardsPerSlide = 3; 
   } else if (window.innerWidth <= 992 && window.innerWidth > 768) {
-      cardsPerSlide = 2; // Small-medium screens: 2 cards
+      cardsPerSlide = 2; 
   } else if (window.innerWidth <= 768) {
-      cardsPerSlide = 1; // Small screens: 1 card
+      cardsPerSlide = 1; 
   }
 
   let slideCount = Math.ceil(testimonials.length / cardsPerSlide);
   let currentSlide = 0;
 
-  // Generate cards
+ 
   function generateCards() {
       slide.innerHTML = '';
       
-      // Create all cards
+      
       testimonials.forEach((testimonial, index) => {
           const card = document.createElement('div');
           card.className = 'testimonial-card';
@@ -239,7 +235,7 @@ document.addEventListener('DOMContentLoaded', function() {
       updateCardVisibility();
   }
 
-  // Generate dots
+  
   function generateDots() {
       dots.innerHTML = '';
       for (let i = 0; i < slideCount; i++) {
@@ -252,7 +248,7 @@ document.addEventListener('DOMContentLoaded', function() {
       }
   }
 
-  // Update which cards are visible
+  
   function updateCardVisibility() {
       const cards = document.querySelectorAll('.testimonial-card');
       
@@ -268,22 +264,22 @@ document.addEventListener('DOMContentLoaded', function() {
       });
   }
 
-  // Go to a specific slide
+  
   function goToSlide(slideIndex) {
       currentSlide = slideIndex;
       updateCardVisibility();
       updateDots();
       
-      // Reset animations
+      
       const visibleCards = document.querySelectorAll('.testimonial-card[style*="display: block"]');
       visibleCards.forEach((card, index) => {
           card.style.animation = 'none';
-          card.offsetHeight; // Trigger reflow
+          card.offsetHeight; 
           card.style.animation = `fadeIn 0.5s ease forwards ${index * 0.1}s`;
       });
   }
 
-  // Update active dot
+  
   function updateDots() {
       const allDots = document.querySelectorAll('.dot');
       allDots.forEach((dot, index) => {
@@ -291,12 +287,12 @@ document.addEventListener('DOMContentLoaded', function() {
       });
   }
 
-  // Event listeners
+ 
   prevBtn.addEventListener('click', () => {
       if (currentSlide > 0) {
           goToSlide(currentSlide - 1);
       } else {
-          goToSlide(slideCount - 1); // Loop to the last slide
+          goToSlide(slideCount - 1); 
       }
   });
 
@@ -304,11 +300,11 @@ document.addEventListener('DOMContentLoaded', function() {
       if (currentSlide < slideCount - 1) {
           goToSlide(currentSlide + 1);
       } else {
-          goToSlide(0); // Loop to the first slide
+          goToSlide(0); 
       }
   });
 
-  // Add keyboard navigation
+  
   document.addEventListener('keydown', (e) => {
       if (e.key === 'ArrowLeft') {
           prevBtn.click();
@@ -317,41 +313,41 @@ document.addEventListener('DOMContentLoaded', function() {
       }
   });
 
-  // Auto-advance carousel (optional)
+  
   let autoAdvance;
   function startAutoAdvance() {
       autoAdvance = setInterval(() => {
           nextBtn.click();
-      }, 5000); // Change slides every 5 seconds
+      }, 5000); 
   }
 
   function stopAutoAdvance() {
       clearInterval(autoAdvance);
   }
 
-  // Start auto-advance and pause on hover
+  
   startAutoAdvance();
   document.querySelector('.carousel-container').addEventListener('mouseenter', stopAutoAdvance);
   document.querySelector('.carousel-container').addEventListener('mouseleave', startAutoAdvance);
 
-  // Handle window resize
+  
   window.addEventListener('resize', () => {
-      // Recalculate cards per slide
-      let newCardsPerSlide = 4; // Default for large screens
+      
+      let newCardsPerSlide = 4; 
       if (window.innerWidth <= 1200 && window.innerWidth > 992) {
-          newCardsPerSlide = 3; // Medium screens
+          newCardsPerSlide = 3; 
       } else if (window.innerWidth <= 992 && window.innerWidth > 768) {
-          newCardsPerSlide = 2; // Small-medium screens
+          newCardsPerSlide = 2; 
       } else if (window.innerWidth <= 768) {
-          newCardsPerSlide = 1; // Small screens
+          newCardsPerSlide = 1; 
       }
       
-      // If cards per slide changed, recalculate everything
+      
       if (newCardsPerSlide !== cardsPerSlide) {
           cardsPerSlide = newCardsPerSlide;
           const newSlideCount = Math.ceil(testimonials.length / cardsPerSlide);
           
-          // Adjust current slide if needed
+          
           if (currentSlide >= newSlideCount) {
               currentSlide = newSlideCount - 1;
           }
@@ -361,8 +357,6 @@ document.addEventListener('DOMContentLoaded', function() {
           updateCardVisibility();
       }
   });
-
-  // Initialize
   generateCards();
   generateDots();
 });

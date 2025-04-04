@@ -1,6 +1,4 @@
-/* =================== */
-/*   Global Styles     */
-/* =================== */
+
 body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
@@ -8,9 +6,7 @@ body {
   text-align: center;
 }
 
-/* =================== */
-/*   Top Banner        */
-/* =================== */
+
 .top-banner {
   background-color: #2b2523;
   color: white;
@@ -20,9 +16,7 @@ body {
   width: 100%;
 }
 
-/* =================== */
-/*   Navbar            */
-/* =================== */
+
 .navbar {
   display: flex;
   align-items: center;
@@ -101,9 +95,7 @@ body {
   display: none;
 }
 
-/* =================== */
-/*   Product Section   */
-/* =================== */
+
 .product-section {
   display: flex;
   justify-content: center;
@@ -185,9 +177,7 @@ h1 {
   transform: scale(1.1);
 }
 
-/* =================== */
-/*   Taste Section     */
-/* =================== */
+
 .taste-section {
   text-align: center;
   padding: 30px 0;
@@ -206,9 +196,7 @@ h1 {
   animation: fadeInUp 1.5s ease-in-out;
 }
 
-/* =================== */
-/*   Ingredients Section */
-/* =================== */
+
 .ingredients-section {
   display: flex;
   justify-content: center;
@@ -291,9 +279,7 @@ h1 {
   transform: scale(1.1);
 }
 
-/* =================== */
-/*   Guarantee Section */
-/* =================== */
+
 .guarantee-section {
   display: flex;
   justify-content: center;
@@ -347,9 +333,7 @@ h1 {
   color: #555;
 }
 
-/* =================== */
-/*   Brands Section    */
-/* =================== */
+
 .brands {
   padding: 10px;
   font-size: 18px;
@@ -378,9 +362,7 @@ h1 {
   font-family: 'Georgia', serif;
 }
 
-/* =================== */
-/*   Main Product Display (Carousel & Subscription) */
-/* =================== */
+
 .product-container {
   display: flex;
   justify-content: space-between;
@@ -528,9 +510,7 @@ h1 {
   border-radius: 30px;
 }
 
-/* =================== */
-/*   Icon & Name Section */
-/* =================== */
+
 .icon-name-container {
   display: flex;
   justify-content: space-evenly;
@@ -553,9 +533,7 @@ h1 {
   font-weight: bold;
 }
 
-/* =================== */
-/*   Cards Section (Main Container) */
-/* =================== */
+
 .container {
   display: flex;
   width: 80%;
@@ -650,18 +628,14 @@ h1 {
   background: #e66a00;
 }
 
-/* =================== */
-/*   Full Image Section */
-/* =================== */
+
 .fullimg img {
   width: 80%;
   text-align: center;
   margin: 20px 0;
 }
 
-/* =================== */
-/*   Animations       */
-/* =================== */
+
 @keyframes fadeIn {
   from { opacity: 0; transform: scale(0.9); }
   to { opacity: 1; transform: scale(1); }
@@ -672,9 +646,7 @@ h1 {
   to { opacity: 1; transform: translateY(0); }
 }
 
-/* =================== */
-/*   Media Queries    */
-/* =================== */
+
 
 /* Small Devices (max-width: 576px) */
 @media (max-width: 576px) {
@@ -830,14 +802,10 @@ h1 {
   }
 }
 
-/* Large Devices (min-width: 993px) */
-@media (min-width: 993px) {
-  /* Default styles are optimized for large screens.
-     You can add any additional overrides if needed. */
-}
 
 
-/* Importing the same font style */
+
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
 
 body {
@@ -845,7 +813,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #fff;
-    /* text-align: center; */
+    
 }
 
 .container {
@@ -859,7 +827,7 @@ body {
     gap: 50px;
 }
 
-/* Left Section - Text */
+
 .text-section {
     text-align: left;
     flex: 1;
@@ -920,7 +888,7 @@ h1 {
     padding-left: 10px;
 }
 
-/* CTA Button */
+
 .cta-button {
     background: linear-gradient(to right, #c79a38, #e8c16b);
     border: none;
@@ -937,7 +905,6 @@ h1 {
     opacity: 0.9;
 }
 
-/* Right Section - Video */
 .video-section {
     flex: 1;
     display: flex;
@@ -971,7 +938,7 @@ h1 {
     cursor: pointer;
 }
 
-/* RESPONSIVENESS */
+
 @media (max-width: 992px) {
     .container {
         flex-direction: column;
@@ -1028,18 +995,12 @@ h1 {
   color: black;
 }
 
-
-
-
-/* Importing the same font style */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
-
 body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #fff;
-    /* text-align: center; */
+    
 }
 
 .comparison-section {
@@ -1055,7 +1016,7 @@ h2 {
     margin-bottom: 20px;
 }
 
-/* Table Styling */
+
 .table-container {
     overflow-x: auto;
 }
@@ -1089,7 +1050,7 @@ tbody td {
     font-weight: bold;
 }
 
-/* Check & Cross Styling */
+
 .check {
     color: green;
     font-size: 18px;
@@ -1147,18 +1108,18 @@ tbody td {
     }
 }
 
-/* Import Poppins Font */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+
 
 body {
   font-family: 'Poppins', sans-serif;
   margin: 0;
   padding: 0;
   background-color: #fff;
-  /* text-align: center; */
+  
 }
 
-/* Founders Section - Always Column Layout */
+
 .founders-section {
   max-width: 1100px;
   margin: 50px auto;
@@ -1168,7 +1129,7 @@ body {
   align-items: center;
 }
 
-/* Video Container: Always 80% of Screen Width */
+
 .video-container {
   position: relative;
   width: 80%;
@@ -1205,7 +1166,6 @@ body {
   background: rgba(255, 175, 0, 1);
 }
 
-/* Content Section Below Video */
 .content {
   width: 80%;
   margin-top: 20px;
@@ -1224,7 +1184,6 @@ body {
   line-height: 1.6;
 }
 
-/* CTA Button */
 .about-button {
   background: linear-gradient(to right, #c79a38, #e8c16b);
   border: none;
@@ -1243,9 +1202,7 @@ body {
   opacity: 0.9;
 }
 
-/* RESPONSIVENESS */
 
-/* For Medium Devices */
 @media (max-width: 992px) {
   .content h2 {
     font-size: 20px;
@@ -1269,11 +1226,6 @@ body {
   }
 }
 
-
-
-/* Import Google Font */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
-
 * {
     box-sizing: border-box;
     margin: 0;
@@ -1283,10 +1235,10 @@ body {
 body {
     font-family: 'Poppins', sans-serif;
     background-color: #f9f9f9;
-    /* padding: 20px; */
+   
 }
 
-/* FAQ Section */
+
 .faq-section {
     max-width: 1100px;
     margin: auto;
@@ -1296,7 +1248,7 @@ body {
     gap: 50px;
 }
 
-/* Left Side - Contact */
+
 .faq-contact {
     flex: 1;
     text-align: left;
@@ -1330,13 +1282,13 @@ body {
     margin-left: 8px;
 }
 
-/* Right Side - FAQ List */
+
 .faq-list {
     flex: 2;
     width: 100%;
 }
 
-/* FAQ Item */
+
 .faq-item {
     border-bottom: 1px solid #ccc;
     padding: 15px 0;
@@ -1356,7 +1308,7 @@ body {
     font-weight: bold;
 }
 
-/* FAQ Answer (Hidden by Default) */
+
 .faq-answer {
     display: none;
     padding-top: 10px;
@@ -1364,7 +1316,7 @@ body {
     color: #666;
 }
 
-/* See All Link */
+
 .see-all {
     text-align: right;
     margin-top: 10px;
@@ -1373,9 +1325,7 @@ body {
     cursor: pointer;
 }
 
-/* RESPONSIVE DESIGN */
 
-/* Small Screens (≤600px): Stack items vertically */
 @media (max-width: 600px) {
     .faq-section {
         flex-direction: column;
@@ -1390,7 +1340,7 @@ body {
     }
 }
 
-/* Medium Screens (601px-992px): Adjust layout */
+
 @media (max-width: 992px) {
     .faq-section {
         flex-direction: column;
@@ -1406,9 +1356,6 @@ body {
 
 
 
-/* Import Google Font */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
-
 * {
     box-sizing: border-box;
     margin: 0;
@@ -1423,10 +1370,10 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    /* padding: 20px; */
+    
 }
 
-/* Section Styling */
+
 .signup-section {
     background: url('../assets/cups.webp') no-repeat center center/cover;
     border-radius: 15px;
@@ -1459,7 +1406,7 @@ p {
     margin-bottom: 20px;
 }
 
-/* Input & Button */
+
 .signup-form {
     display: flex;
     flex-direction: column;
@@ -1500,7 +1447,7 @@ button .arrow {
     margin-left: 8px;
 }
 
-/* Responsive Design */
+
 
 /* Small Screens */
 @media (max-width: 600px) {
@@ -1552,7 +1499,7 @@ button .arrow {
 }
 
 
-/* Global Styles */
+
 body {
   font-family: 'Poppins', sans-serif;
   margin: 0;
@@ -1560,7 +1507,6 @@ body {
   background-color: #fff;
 }
 
-/* Footer Styling */
 .footer {
   background-color: #121212;
   color: white;
@@ -1578,7 +1524,7 @@ body {
   flex-wrap: wrap;
 }
 
-/* Left Section */
+
 .footer-left {
   flex: 1;
   min-width: 250px;
@@ -1617,7 +1563,7 @@ body {
   color: #d4a259;
 }
 
-/* Social Icons */
+
 .social-icons {
   margin-top: 20px;
 }
@@ -1633,14 +1579,13 @@ body {
   transform: scale(1.1);
 }
 
-/* Copyright */
+
 .copyright {
   font-size: 12px;
   color: #d4a259;
   margin-top: 15px;
 }
 
-/* Right Section */
 .footer-right {
   flex: 1;
   min-width: 300px;
@@ -1653,7 +1598,7 @@ body {
   color: #d4a259;
 }
 
-/* Newsletter Form */
+
 .newsletter-form {
   display: flex;
   margin-top: 10px;
@@ -1687,7 +1632,7 @@ body {
   background-color: #e0b26a;
 }
 
-/* Privacy Policy */
+
 .privacy-policy {
   font-size: 12px;
   color: #bbb;
