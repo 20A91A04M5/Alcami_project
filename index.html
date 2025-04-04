@@ -32,23 +32,23 @@
       <ul class="nav-links">
           <li><a href="#">Home</a></li>
           <li class="dropdown">
-              <a href="#">Shop <i class="fas fa-chevron-down"></i></a>
+              <a href="#shp">Shop <i class="fas fa-chevron-down"></i></a>
               <ul class="dropdown-menu">
                   <li><a href="#">All Products</a></li>
                   <li><a href="#">New Arrivals</a></li>
               </ul>
           </li>
-          <li><a href="#">Elements</a></li>
-          <li><a href="#">About Us</a></li>
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="#ele">Elements</a></li>
+          <li><a href="#abt">About Us</a></li>
+          <li><a href="#blg">Blog</a></li>
+          <li><a href="#cont">Contact</a></li>
       </ul>
 
       
       <div class="nav-right">
         <i class="fas fa-search search-icon" onclick="toggleSearch()"></i>
         <div class="search-box">
-            <input type="text" placeholder="Search for products...">
+            <input style="width: 70%;" type="text" placeholder="Search for products...">
         </div>
         <button class="cta-button">Try Alcami →</button>
       </div>
@@ -84,7 +84,7 @@
     <p class="taste-text">Incredible Taste And Effects You Can Feel</p>
 </div>
 
-<section class="ingredients-section">
+<section class="ingredients-section" id="ele">
   <div class="ingredients-container">
       <div class="image-container">
           <img src="./assets/img2.png" alt="Product" class="product-image">
@@ -138,7 +138,7 @@
 
     
     <section class="brands">
-      <p><span class="highlight">AS SEEN IN</span> 
+      <p><span class=" brand highlight">AS SEEN IN</span> 
       <span class="brand">FASTCOMPANY</span> 
       <span class="brand bold">Forbes</span> 
       <span class="brand italic">goop</span> 
@@ -147,7 +147,7 @@
   </section>
 
 
-<section class="product-container">
+<section class="product-container" id="shp">
   <div class="left-section">
       
       <div class="carousel">
@@ -235,7 +235,7 @@
           </div>
       </div>
 
-      <button class="add-to-cart">Add to Cart →</button>
+      <button class="add-to-cart" id="cart">Add to Cart →</button>
   </div>
 
 </section>
@@ -255,7 +255,7 @@
 </div>
 
 
-<div class="container">
+<div class="container" id="abt">
   
   <div class="left">
       <img src="./assets/img11.png" alt="Product">
@@ -306,11 +306,11 @@
 </div><br><br>
 
 <div class="fullimg">
-  <img width="80%" style="text-align: center;" src="./assets/img12.png" alt="">
+  <img width="80%" style="text-align: center; cursor: pointer;" src="./assets/img12.png" alt="">
 </div>
 
 
-<div class="container">
+<div class="container" id="blg">
     <div class="text-section">
         <h1>Your morning ritual, <br> made to awaken your mind.</h1>
         <p class="sub-text">
@@ -453,7 +453,7 @@
         </table>
     </div>
 
-    <button class="cta-button">Try It Risk-Free →</button>
+    <button class="cta-button" id="checked-items">Try It Risk-Free →</button>
 </section>
 
 
@@ -566,7 +566,7 @@
 
 
 
-<section class="signup-section">
+<section class="signup-section" id="cont">
     <div class="signup-container">
         <h2>Sign up and receive up to 15% OFF on your first order</h2>
         <p>Get weekly recipes, insights, and freebies when you sign up to our newsletter.</p>
@@ -589,13 +589,13 @@
             <div class="footer-links">
                 <ul>
                     <li><a href="#">Home</a></li>
-                    <li><a href="#">Shop</a></li>
-                    <li><a href="#">Elements</a></li>
+                    <li><a href="#shp">Shop</a></li>
+                    <li><a href="#ele">Elements</a></li>
                 </ul>
                 <ul>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#abt">About Us</a></li>
+                    <li><a href="#blg">Blog</a></li>
+                    <li><a href="#cont">Contact</a></li>
                 </ul>
             </div>
             <div class="social-icons">
@@ -603,14 +603,14 @@
                 <a href="#"><img src="./assets/insta.jpeg" alt="Instagram"></a>
                 <a href="#"><img src="./assets/x.jpeg" alt="X"></a>
             </div>
-            <p class="copyright">© 2024 ALCAMI ELEMENTS. ALL RIGHTS RESERVED.</p>
+            <p class="copyright">© 2025 ALCAMI ELEMENTS. ALL RIGHTS RESERVED BY L.Tirumalaprasad .</p>
         </div>
 
         
         <div class="footer-right">
             <p class="newsletter-text"><strong>Stay updated on new features and releases.</strong></p>
             <div class="newsletter-form">
-                <input type="email" id="email" placeholder="Enter your email">
+                <input type="email" id="emails" placeholder="Enter your email">
                 <button id="subscribe-btn">Subscribe</button>
             </div>
             <p class="privacy-policy">By subscribing, you agree to our <a href="#">Privacy Policy</a>.</p>

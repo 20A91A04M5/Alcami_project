@@ -10,7 +10,9 @@ function toggleSearch() {
 }
 
 
-
+document.getElementById("cart").addEventListener("click",function(){
+  alert("Item Added to cart ...")
+})
 // Carousel Logic
 let index = 0;
 const images = document.querySelectorAll('.carousel-img');
@@ -33,9 +35,6 @@ nextBtn.addEventListener('click', () => {
 });
 
 
-document.querySelector(".cta-button").addEventListener("click", function () {
-  alert("Thank you for your interest!");
-});
 
 
 function playVideo() {
@@ -43,7 +42,7 @@ function playVideo() {
 }
 
 
-document.querySelector(".cta-button").addEventListener("click", function () {
+document.getElementById("checked-items").addEventListener("click", function () {
   alert("Redirecting to the checkout page...");
 });
 
@@ -103,7 +102,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 document.getElementById('subscribe-btn').addEventListener('click', function () {
-  const emailInput = document.getElementById('email').value;
+  const emailInput = document.getElementById('emails').value;
+  console.log(emailInput)
   
   if (emailInput === "") {
       alert("Please enter your email.");

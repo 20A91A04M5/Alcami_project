@@ -337,13 +337,10 @@ h1 {
 .brands {
   padding: 10px;
   font-size: 18px;
-  border-bottom: 3px solid gold;
+  
 }
 
-.highlight {
-  font-weight: bold;
-  color: black;
-}
+
 
 .brand {
   margin: 0 10px;
@@ -969,7 +966,7 @@ h1 {
         font-size: 14px;
     }
     .video-container {
-        max-width: 300px;
+        max-width: 100%;
     }
 }
 
@@ -1045,10 +1042,7 @@ tbody td {
     border-bottom: 1px solid #ddd;
 }
 
-.highlighted {
-    background: rgba(199, 154, 56, 0.1);
-    font-weight: bold;
-}
+
 
 
 .check {
@@ -1416,7 +1410,7 @@ p {
 }
 
 input {
-    width: 80%;
+    width: 20%;
     padding: 12px;
     border: 1px solid #ccc;
     border-radius: 6px;
